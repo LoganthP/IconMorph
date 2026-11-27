@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/readme/banner.svg" alt="iconmorph. Little icons. Infinite personalities." width="100%"/>
+<img src="assets/banner.svg" alt="iconmorph. Little icons. Infinite personalities." width="100%"/>
 
 <a href="https://loganthp.github.io/IconMorph">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E8A68C&center=true&vCenter=true&width=760&lines=Turn+folders+into+characters.;Give+every+shortcut+a+personality.;Close+the+app.+The+icon+stays.;Native+icons+on+Windows%2C+macOS+and+Linux." alt="Typing animation"/>
@@ -38,7 +38,7 @@
 
 </div>
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🎨 About
 
@@ -51,10 +51,10 @@
 <br/>
 
 <div align="center">
-  <img src="assets/readme/pipeline.svg" alt="Pick, Morph, Preview, Apply, Verify, Done" width="100%"/>
+  <img src="assets/pipeline.svg" alt="Pick, Morph, Preview, Apply, Verify, Done" width="100%"/>
 </div>
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## ✨ Features
 
@@ -151,7 +151,7 @@ Also: ICO / ICNS / PNG export, a command palette (`Ctrl K`), keyboard shortcuts 
 </tr>
 </table>
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🏗️ Architecture
 
@@ -283,7 +283,7 @@ classDiagram
 
 Read more in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🧰 Tech Stack
 
@@ -304,7 +304,7 @@ Read more in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 | **CI/CD** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white) | Checks on Linux, Windows and macOS; releases for 6 targets; landing page deploy |
 | **Landing page** | React · Vite · Tailwind · GitHub Pages | [loganthp.github.io/IconMorph](https://loganthp.github.io/IconMorph) |
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 📁 Project Structure
 
@@ -330,7 +330,7 @@ IconMorph/
 └── .github/workflows/          # ci.yml · release.yml · pages.yml
 ```
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 📦 Install
 
@@ -346,7 +346,7 @@ Verify downloads against `SHA256SUMS.txt` from the release.
 
 > **Prefer building it yourself?** Jump to [Quick Start](#-quick-start).
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## ⚡ Quick Start
 
@@ -500,7 +500,7 @@ cargo test --workspace
 | `cargo run -p iconmorph-core --example bench_engine` | Run the engine benchmark |
 | `python3 scripts/gen-collections.py` | Regenerate the Pixel Friends and Minimalist SVGs and manifest |
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🧭 Status: what works where
 
@@ -517,7 +517,7 @@ This is an honest matrix. **Verified** means the full apply → verify → resto
 
 The app shows this information for the machine it is running on (the platform chip in the top bar and the chips on Home) and disables whatever is not supported there. Platform details are in [docs/PLATFORMS.md](docs/PLATFORMS.md).
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🪶 How it stays lightweight
 
@@ -542,7 +542,7 @@ The app itself never stays running. The one exception is opt-in: if you turn on 
 
 Uninstalling the app does not delete this folder, so applied icons keep working. To remove everything, use **Time Capsule → Restore all**, then **Remove unused icons**, then delete the folder.
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🛠️ Troubleshooting
 
@@ -595,7 +595,7 @@ Animation works on Windows only, for items on the desktop itself (not inside Exp
 - A GIF with transparent areas shows the still frame behind those areas.
 - Windows and macOS builds compile against the real APIs and have native tests in CI, but have not been run on real hardware by the maintainers yet. Help is welcome: see the [manual test checklist](docs/TESTING.md).
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 🗺️ Roadmap
 
@@ -630,7 +630,7 @@ Code is released under the [MIT License](LICENSE). See [THIRD_PARTY_LICENSES.md]
 
 <div align="center">
 
-<img src="assets/readme/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 Made with 🧡 by [**Loganth**](https://github.com/LoganthP)
 

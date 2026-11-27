@@ -8,10 +8,11 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
-REG="$(ls -d "${CARGO_HOME:-$HOME/.cargo}"/registry/src/index.crates.io-* | head -1)"
 
 cp -r "$ROOT/crates/iconmorph-core" "$WORK/core"
-( cd "$ROOT" && cargo fetch -q ) && ( cd "$WORK/core" && cargo fetch -q --manifest-path Cargo.toml 2>/dev/null || true )
+( cd "$ROOT" && cargo fetch -q )
+REG="$(ls -d "${CARGO_HOME:-$HOME/.cargo}"/registry/src/index.crates.io-* | head -1)"
+( cd "$WORK/core" && cargo fetch -q --manifest-path Cargo.toml 2>/dev/null || true )
 cd "$WORK"
 
 # Windows: stub windows-future (WinRT only) and lift #![cfg(windows)] in the crates we use.

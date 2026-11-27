@@ -37,7 +37,7 @@ members = ["core"]
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-rust-version = "1.80"
+rust-version = "1.89"
 [patch.crates-io]
 $patch_entries
 TOML

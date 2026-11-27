@@ -58,16 +58,16 @@ pub fn resize_premultiplied(img: &RgbaImage, w: u32, h: u32, filter: FilterType)
     let mut pre = img.clone();
     for p in pre.pixels_mut() {
         let a = p.0[3] as u32;
-        for c in 0..3 {
-            p.0[c] = ((p.0[c] as u32 * a + 127) / 255) as u8;
+        for channel in p.0.iter_mut().take(3) {
+            *channel = ((*channel as u32 * a + 127) / 255) as u8;
         }
     }
     let mut out = image::imageops::resize(&pre, w, h, filter);
     for p in out.pixels_mut() {
         let a = p.0[3] as u32;
-        for c in 0..3 {
-            let v = p.0[c] as u32;
-            p.0[c] = (v.min(a) * 255 + a / 2)
+        for channel in p.0.iter_mut().take(3) {
+            let v = *channel as u32;
+            *channel = (v.min(a) * 255 + a / 2)
                 .checked_div(a)
                 .unwrap_or(0)
                 .min(255) as u8;
@@ -88,4 +88,20 @@ pub fn fit_within(img: &RgbaImage, max: u32, allow_upscale: bool) -> RgbaImage {
     let nw = ((w as f32 * s).round() as u32).max(1);
     let nh = ((h as f32 * s).round() as u32).max(1);
     resize_premultiplied(img, nw, nh, FilterType::Lanczos3)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::resize_premultiplied;
+    use image::{imageops::FilterType, Rgba, RgbaImage};
+
+    #[test]
+    fn resize_premultiplied_preserves_alpha_and_unpremultiplies_rgb() {
+        let img = RgbaImage::from_pixel(1, 1, Rgba([100, 50, 25, 128]));
+
+        let resized = resize_premultiplied(&img, 2, 1, FilterType::Nearest);
+
+        assert_eq!(resized.get_pixel(0, 0), &Rgba([100, 50, 26, 128]));
+        assert_eq!(resized.get_pixel(1, 0), &Rgba([100, 50, 26, 128]));
+    }
 }

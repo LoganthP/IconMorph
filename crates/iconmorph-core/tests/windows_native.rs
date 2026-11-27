@@ -103,8 +103,10 @@ fn shortcut_icon_changes_without_touching_target_or_arguments() {
         .ends_with(".ico"));
     let bytes = std::fs::read(&lnk).unwrap();
     let as_utf16: Vec<u16> = bytes
-        .chunks_exact(2)
-        .map(|c| u16::from_le_bytes([c[0], c[1]]))
+        .as_chunks::<2>()
+        .0
+        .iter()
+        .map(|c| u16::from_le_bytes(*c))
         .collect();
     assert!(
         String::from_utf16_lossy(&as_utf16).contains("--flag value"),

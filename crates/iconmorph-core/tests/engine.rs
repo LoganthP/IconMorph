@@ -810,9 +810,10 @@ fn desktop_snapshots_restore_a_whole_arrangement() {
     assert!(results.iter().all(|r| r.ok), "{results:?}");
     let active = fx.engine.customized_items().unwrap();
     let hash_of = |p: &Path| {
+        let target = iconmorph_core::engine::canonical_target(&p.to_string_lossy()).unwrap();
         active
             .iter()
-            .find(|r| r.target_path == p.canonicalize().unwrap().to_string_lossy())
+            .find(|r| r.target_path == target.to_string_lossy())
             .map(|r| r.icon_hash.clone())
     };
     assert_eq!(hash_of(&a), ra.icon_hash);

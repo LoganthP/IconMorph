@@ -632,8 +632,6 @@ Code is released under the [MIT License](LICENSE). See [THIRD_PARTY_LICENSES.md]
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
-Made with 🧡 by [**Loganth**](https://github.com/LoganthP)
-
 <sub>If iconmorph gave your desktop some personality, a ⭐ on the repo is much appreciated.</sub>
 
 </div>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- iconmorph. brand mark "Morphling": a tile mid-transformation into a character.
+       Original artwork, MIT licensed (IconMorph contributors). -->
+  <defs>
+    <path id="b" d="M58 58 C50 40 50 24 56 14 C68 20 84 34 92 50 L108 50 C116 34 132 20 144 14 C150 24 150 40 142 58
+                    C162 64 174 82 174 106 L174 136 C174 162 156 180 130 180 L70 180 C44 180 26 162 26 136 L26 106 C26 82 38 64 58 58 Z"/>
+    <clipPath id="l"><path d="M0 0 H96 C86 70 120 120 100 200 H0 Z"/></clipPath>
+    <clipPath id="r"><path d="M96 0 C86 70 120 120 100 200 H200 V0 Z"/></clipPath>
+  </defs>
+  <use href="#b" fill="#B7C9B2" clip-path="url(#l)"/>
+  <use href="#b" fill="#E8A68C" clip-path="url(#r)"/>
+  <circle cx="76" cy="118" r="10" fill="#293B32"/>
+  <circle cx="126" cy="118" r="10" fill="#293B32"/>
+  <circle cx="79" cy="114" r="3" fill="#F7F5EF"/>
+  <circle cx="129" cy="114" r="3" fill="#F7F5EF"/>
+  <path d="M92 140 Q101 149 110 140" stroke="#293B32" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="58" cy="140" rx="10" ry="6" fill="#E3C1D6" opacity=".9"/>
+  <ellipse cx="146" cy="140" rx="10" ry="6" fill="#E3C1D6" opacity=".9"/>
+</svg>

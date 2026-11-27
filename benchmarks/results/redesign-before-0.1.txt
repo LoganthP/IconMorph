@@ -1,0 +1,3 @@
+BEFORE run1: window 2.960s | RSS core 135MB web 184MB net 45MB | idle CPU 10s: core 0s web 1s | after close: 0 app, 0 webkit
+BEFORE run2: window 0.092s | RSS core 138MB web 182MB net 47MB | idle CPU 10s: core 0s web 0s | after close: 0 app, 0 webkit
+BEFORE run3: window 0.178s | RSS core 137MB web 184MB net 47MB | idle CPU 10s: core 0s web 0s | after close: 0 app, 0 webkit

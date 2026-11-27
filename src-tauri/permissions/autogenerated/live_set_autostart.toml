@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-live-set-autostart"
+description = "Enables the live_set_autostart command without any pre-configured scope."
+commands.allow = ["live_set_autostart"]
+
+[[permission]]
+identifier = "deny-live-set-autostart"
+description = "Denies the live_set_autostart command without any pre-configured scope."
+commands.deny = ["live_set_autostart"]

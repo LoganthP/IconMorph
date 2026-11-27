@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-preview-icon"
+description = "Enables the preview_icon command without any pre-configured scope."
+commands.allow = ["preview_icon"]
+
+[[permission]]
+identifier = "deny-preview-icon"
+description = "Denies the preview_icon command without any pre-configured scope."
+commands.deny = ["preview_icon"]

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-release-memory"
+description = "Enables the release_memory command without any pre-configured scope."
+commands.allow = ["release_memory"]
+
+[[permission]]
+identifier = "deny-release-memory"
+description = "Denies the release_memory command without any pre-configured scope."
+commands.deny = ["release_memory"]

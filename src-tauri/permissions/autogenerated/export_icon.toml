@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-export-icon"
+description = "Enables the export_icon command without any pre-configured scope."
+commands.allow = ["export_icon"]
+
+[[permission]]
+identifier = "deny-export-icon"
+description = "Denies the export_icon command without any pre-configured scope."
+commands.deny = ["export_icon"]

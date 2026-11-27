@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- IconMorph original asset, CC0 -->
+  <path d="M40 70 L52 18 L88 52 Z" fill="#F59E0B"/>
+  <path d="M160 70 L148 18 L112 52 Z" fill="#F59E0B"/>
+  <path d="M50 62 L56 34 L76 54 Z" fill="#FDBA74"/>
+  <path d="M150 62 L144 34 L124 54 Z" fill="#FDBA74"/>
+  <ellipse cx="100" cy="112" rx="72" ry="64" fill="#FBBF24"/>
+  <ellipse cx="100" cy="140" rx="38" ry="26" fill="#FEF3C7"/>
+  <ellipse cx="72" cy="104" rx="10" ry="13" fill="#1E293B"/>
+  <ellipse cx="128" cy="104" rx="10" ry="13" fill="#1E293B"/>
+  <circle cx="75" cy="99" r="3.5" fill="#fff"/>
+  <circle cx="131" cy="99" r="3.5" fill="#fff"/>
+  <path d="M92 128 h16 l-8 9 z" fill="#FB7185"/>
+  <path d="M100 137 q-8 10 -18 4 M100 137 q8 10 18 4" stroke="#1E293B" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="52" cy="128" rx="11" ry="7" fill="#FB7185" opacity=".45"/>
+  <ellipse cx="148" cy="128" rx="11" ry="7" fill="#FB7185" opacity=".45"/>
+</svg>

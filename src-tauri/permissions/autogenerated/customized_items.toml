@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-customized-items"
+description = "Enables the customized_items command without any pre-configured scope."
+commands.allow = ["customized_items"]
+
+[[permission]]
+identifier = "deny-customized-items"
+description = "Denies the customized_items command without any pre-configured scope."
+commands.deny = ["customized_items"]

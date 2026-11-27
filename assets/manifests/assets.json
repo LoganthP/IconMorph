@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "name": "Cat",
+      "file": "characters/cat.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "animals",
+      "tags": [
+        "cat",
+        "pet",
+        "kawaii"
+      ],
+      "sha256": "cde529e6eca2d0cd9bd8099d739bd9690bc5edf59b2ff67b1747a6f3363a4c5d"
+    },
+    {
+      "name": "Morphling brand mark",
+      "file": "brand/mark.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "MIT",
+      "attribution": null,
+      "category": "brand",
+      "tags": [
+        "logo",
+        "morphling"
+      ],
+      "sha256": "7e4bee390d67a0e3243f67d4c9a5a95c5e454f269e3454d5e7ccf741d0c9718b"
+    },
+    {
+      "name": "Cat",
+      "file": "collections/pixel/cat.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "cat",
+        "pixel"
+      ],
+      "sha256": "ae7e217247b974c48b8f3571606d919792e42718cbec31a6e4611655ecc5dd88"
+    },
+    {
+      "name": "Ghost",
+      "file": "collections/pixel/ghost.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "ghost",
+        "pixel"
+      ],
+      "sha256": "9fc3fd1c93fd4109368468015406f648f3298864bfa753f4e769f644645877f6"
+    },
+    {
+      "name": "Slime",
+      "file": "collections/pixel/slime.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "slime",
+        "pixel"
+      ],
+      "sha256": "efd07a5a25992bbbcff5094df3859bada179ddc87cc9766a6d50c51648c904fb"
+    },
+    {
+      "name": "Robot",
+      "file": "collections/pixel/robot.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "robot",
+        "pixel"
+      ],
+      "sha256": "3fdd4040bdb70d6665ec28084fe01a7feb85c01824dc37fcb23e079fd9f9eb11"
+    },
+    {
+      "name": "Mushroom",
+      "file": "collections/pixel/mushroom.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "mushroom",
+        "pixel"
+      ],
+      "sha256": "ca323a32840b5ed00c13db9baf243e6b33972b2db13889680f899109a7eb4697"
+    },
+    {
+      "name": "Frog",
+      "file": "collections/pixel/frog.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "frog",
+        "pixel"
+      ],
+      "sha256": "33904d8487d0ecad20764adb4cfa2ca9b405d9fd0e0ea6c348a6a386ebab2637"
+    },
+    {
+      "name": "Heart",
+      "file": "collections/pixel/heart.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "heart",
+        "pixel"
+      ],
+      "sha256": "05177a99ef2d5c944c812625561bf4ca9fb660bd5e82edd42548df182bcfc227"
+    },
+    {
+      "name": "Star",
+      "file": "collections/pixel/star.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "pixel-friends",
+      "tags": [
+        "star",
+        "pixel"
+      ],
+      "sha256": "a15b53baedbaeebf5fdb4612041296e31e9e8fb64c48bd257c7e9a6fa3497fc4"
+    },
+    {
+      "name": "Pebble",
+      "file": "collections/minimal/pebble.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "pebble",
+        "minimal"
+      ],
+      "sha256": "1dfa2528cc0cd1c630680be3fe57f43211512984fc25bddfb3933d580a6f23f2"
+    },
+    {
+      "name": "Drop",
+      "file": "collections/minimal/drop.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "drop",
+        "minimal"
+      ],
+      "sha256": "c27617fd6fe759a8f2b6ba347ebb319e595e322785905452848936996f16e731"
+    },
+    {
+      "name": "Cloud",
+      "file": "collections/minimal/cloud.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "cloud",
+        "minimal"
+      ],
+      "sha256": "b1e5e4925f30f8e66332cbf96749f1ff99b07ffdb1b7dd8df88f9209d68e429c"
+    },
+    {
+      "name": "Bloom",
+      "file": "collections/minimal/bloom.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "bloom",
+        "minimal"
+      ],
+      "sha256": "d5a5c52088a1e2d48c143cf9ce4770a10ed9e29ded3e4ed1f25c316f2f807b22"
+    },
+    {
+      "name": "Sprout",
+      "file": "collections/minimal/sprout.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "sprout",
+        "minimal"
+      ],
+      "sha256": "19710781321d4d53ef1727c9392e16be8648d6333da3bba94632fcaa694837c6"
+    },
+    {
+      "name": "Moon",
+      "file": "collections/minimal/moon.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "moon",
+        "minimal"
+      ],
+      "sha256": "f79ee7742e4ed424ff00b64efb676c408ab39234b214a5d84ae29c98b8245c6b"
+    },
+    {
+      "name": "Peach",
+      "file": "collections/minimal/peach.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "peach",
+        "minimal"
+      ],
+      "sha256": "5adbcaf1979723e69d28a08a16a06ee202462d549dd7f7e7f2e3e2ad720a01a7"
+    },
+    {
+      "name": "Block",
+      "file": "collections/minimal/block.svg",
+      "creator": "IconMorph contributors",
+      "source": "original",
+      "license": "CC0-1.0",
+      "attribution": null,
+      "category": "minimalist",
+      "tags": [
+        "block",
+        "minimal"
+      ],
+      "sha256": "b992b0e8b42668b02a6cd1c6c0e5970d898fc848cc23efc99f1cb02482ab38de"
+    }
+  ]
+}

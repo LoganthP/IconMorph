@@ -1,0 +1,56 @@
+[package]
+name = "iconmorph-core"
+description = "IconMorph icon engine: image decoding, icon composition, native icon generation, backup/restore and platform adapters"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[features]
+default = []
+# Compile the Windows / macOS adapters on any host for type-checking only (never links or runs).
+typecheck-windows = ["dep:windows"]
+typecheck-macos = ["dep:objc2", "dep:objc2-foundation", "dep:objc2-app-kit"]
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp", "bmp", "gif", "ico"] }
+resvg = { version = "0.45", default-features = false }
+ico = "0.4"
+icns = "0.3"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+hex = "0.4"
+uuid = { version = "1", features = ["v4"] }
+thiserror = "2"
+tracing = "0.1"
+directories = "6"
+base64 = "0.22"
+windows = { version = "0.62", optional = true, default-features = false, features = [
+  "Win32_Foundation", "Win32_UI_Shell", "Win32_UI_Shell_Common", "Win32_System_Com",
+  "Win32_Storage_FileSystem", "Win32_UI_WindowsAndMessaging", "Win32_Graphics_Gdi",
+  "Win32_System_Threading", "Win32_System_Memory", "Win32_System_Diagnostics_Debug",
+  "Win32_UI_Controls", "Win32_UI_HiDpi", "Win32_System_Registry", "Win32_System_RemoteDesktop",
+  "Win32_System_LibraryLoader", "Win32_System_Ole", "Win32_System_Variant", "Win32_Security",
+] }
+objc2 = { version = "0.6", optional = true }
+objc2-foundation = { version = "0.3", optional = true, features = ["NSString", "NSData"] }
+objc2-app-kit = { version = "0.3", optional = true, features = ["NSWorkspace", "NSImage", "NSImageRep"] }
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.62", default-features = false, features = [
+  "Win32_Foundation", "Win32_UI_Shell", "Win32_UI_Shell_Common", "Win32_System_Com",
+  "Win32_Storage_FileSystem", "Win32_UI_WindowsAndMessaging", "Win32_Graphics_Gdi",
+  "Win32_System_Threading", "Win32_System_Memory", "Win32_System_Diagnostics_Debug",
+  "Win32_UI_Controls", "Win32_UI_HiDpi", "Win32_System_Registry", "Win32_System_RemoteDesktop",
+  "Win32_System_LibraryLoader", "Win32_System_Ole", "Win32_System_Variant", "Win32_Security",
+] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
+objc2-foundation = { version = "0.3", features = ["NSString", "NSData"] }
+objc2-app-kit = { version = "0.3", features = ["NSWorkspace", "NSImage", "NSImageRep"] }
+
+[dev-dependencies]
+tempfile = "3"

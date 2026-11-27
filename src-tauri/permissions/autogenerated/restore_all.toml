@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-restore-all"
+description = "Enables the restore_all command without any pre-configured scope."
+commands.allow = ["restore_all"]
+
+[[permission]]
+identifier = "deny-restore-all"
+description = "Denies the restore_all command without any pre-configured scope."
+commands.deny = ["restore_all"]

@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an idea, a platform adapter or an icon collection
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes: { label: What would you like?, description: "Describe the problem first, then the idea." }
+    validations: { required: true }
+  - type: textarea
+    id: platform
+    attributes: { label: Platform notes, description: "If this depends on an OS mechanism, link its documentation." }

@@ -1,0 +1,25 @@
+name: Bug report
+description: Something did not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: platform
+    attributes: { label: Operating system and desktop, description: "e.g. Windows 11 23H2, macOS 14.5, Fedora 40 GNOME 46" }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: IconMorph version }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: "Steps, what you expected, what you saw. Include the message IconMorph showed." }
+    validations: { required: true }
+  - type: dropdown
+    id: target
+    attributes: { label: Item type, options: [Folder, Shortcut / launcher, File, Not applicable] }
+  - type: checkboxes
+    id: restore
+    attributes:
+      label: Restore
+      options:
+        - label: Restore Centre returned the item to its original icon

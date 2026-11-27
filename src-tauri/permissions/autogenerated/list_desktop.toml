@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-list-desktop"
+description = "Enables the list_desktop command without any pre-configured scope."
+commands.allow = ["list_desktop"]
+
+[[permission]]
+identifier = "deny-list-desktop"
+description = "Denies the list_desktop command without any pre-configured scope."
+commands.deny = ["list_desktop"]

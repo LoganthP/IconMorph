@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-live-enable"
+description = "Enables the live_enable command without any pre-configured scope."
+commands.allow = ["live_enable"]
+
+[[permission]]
+identifier = "deny-live-enable"
+description = "Denies the live_enable command without any pre-configured scope."
+commands.deny = ["live_enable"]

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iconmorph. — Little icons. Infinite personalities.</title>
+    <meta
+      name="description"
+      content="Turn real folders and app shortcuts into characters, pixel friends, GIF frames and your own images. Native OS icons with zero background processes and one-click restore."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="iconmorph. — Little icons. Infinite personalities." />
+    <meta
+      property="og:description"
+      content="Native desktop icon personalization for Windows, macOS, and Linux. Safe backups, Time Capsule snapshots, and zero background services."
+    />
+    <meta property="og:image" content="./studio-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="iconmorph. — Little icons. Infinite personalities." />
+    <meta
+      name="twitter:description"
+      content="Customize folders and shortcuts natively. Close iconmorph completely and your icons stay."
+    />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("iconmorph-landing-theme");
+          if (!t) {
+            t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "midnight" : "warm";
+          }
+          if (t !== "warm") document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
